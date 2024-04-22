@@ -24,16 +24,16 @@ body {
 @keyframes ring {
     0% {
         transform: rotate(0deg);
-        box-shadow: 1px 5px 2px #e65c00;
+        box-shadow: 0px 5px 2px orange;
     }
 
     50% {
         transform: rotate(180deg);
-        box-shadow: 1px 5px 2px #18b201;
+        box-shadow: 1px 5px 2px green;
     }
     100%{
         transform: rotate(360deg);
-        box-shadow: 1px 5px 2px #0456c8;
+        box-shadow: 1px 5px 2px blue;
     }
 
 }
@@ -41,21 +41,21 @@ body {
 .ring::before {
     position: absolute;
     content: '';
-    left: 0;
+    right: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 
 }
 
 span {
-    color: #737373;
+    color: gray;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 1px;
-    line-height: 200px;
+    /* line-height: 200px; */
     animation: text 2s ease-in-out infinite;
 }
 
